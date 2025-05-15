@@ -5,8 +5,11 @@ const http = require("http");
 const cors = require("cors");
 
 const PORT = process.env.PORT || 5000;
+const DB = require("./config/db");
 
 const server = http.createServer(app);
+
+DB();
 
 // Middleware setup
 app.use(express.json({ limit: "4mb" }));

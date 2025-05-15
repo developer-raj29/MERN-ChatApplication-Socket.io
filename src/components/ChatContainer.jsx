@@ -38,7 +38,7 @@ const ChatContainer = ({ selectedUser, setSelectedUser }) => {
           <div
             key={index}
             className={`flex item-end gap-2 justify-end ${
-              message.senderId === "680f50e4f10f3cd28382ecf9" &&
+              message.senderId !== "680f50e4f10f3cd28382ecf9" &&
               "flex-row-reverse"
             }`}
           >
